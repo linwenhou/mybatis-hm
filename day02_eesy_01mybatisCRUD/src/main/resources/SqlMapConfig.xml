@@ -26,10 +26,10 @@
     <!--使用typeAliases配置别名，它只能配置domain中类的别名 -->
     <typeAliases>
         <!--typeAlias用于配置别名。type属性指定的是实体类全限定类名。alias属性指定别名，当指定了别名就再区分大小写 
-        <typeAlias type="com.itheima.domain.User" alias="user"></typeAlias>-->
+        <typeAlias type="com.venvoomain.User" alias="user"></typeAlias>-->
 
         <!-- 用于指定要配置别名的包，当指定之后，该包下的实体类都会注册别名，并且类名就是别名，不再区分大小写-->
-        <package name="com.itheima.domain"></package>
+        <package name="com.venvo.domain"></package>
     </typeAliases>
 
     <!--配置环境-->
@@ -50,8 +50,8 @@
     </environments>
     <!-- 配置映射文件的位置 -->
     <mappers>
-        <!--<mapper resource="com/itheima/dao/IUserDao.xml"></mapper>-->
+        <!--<mapper resource="com/venvo/dao/IUserDao.xml"></mapper>-->
         <!-- package标签是用于指定dao接口所在的包,当指定了之后就不需要在写mapper以及resource或者class了 -->
-        <package name="com.itheima.dao"></package>
+        <package name="com.venvo.dao"></package>
     </mappers>
 </configuration>
